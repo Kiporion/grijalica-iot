@@ -4,7 +4,6 @@ import { db } from "../firebase"
 
 
 const ControllerScreen = () => {
-
   const [jacina, setJacina] = useState(0);
 
   useEffect(() => {
@@ -15,19 +14,19 @@ const ControllerScreen = () => {
   }, []);
 
   const pojacaj = () => {
-    set(ref(db, '/jacina'), jacina - 0.1);
+    jacina < 5 && set(ref(db, '/jacina'), jacina + 1);
   }
 
   const smanji = () => {
-    set(ref(db, '/jacina'), jacina + 0.1);
+    jacina > 0 && set(ref(db, '/jacina'), jacina - 1);
   }
 
   const on = () => {
-    set(ref(db, '/jacina'), 1);
+    jacina == 0 && set(ref(db, '/jacina'), 1);
   }
 
   const off = () => {
-    set(ref(db, '/jacina'), 0);
+    jacina > 0 && set(ref(db, '/jacina'), 0);
   }
 
   return (

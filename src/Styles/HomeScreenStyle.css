@@ -26,18 +26,53 @@
       transform: rotate(360deg);
     }
   }
-  .rotating {
+
+  .rotating0 {
+    -webkit-animation: rotating 0s linear infinite;
+    -moz-animation: rotating 0s linear infinite;
+    -ms-animation: rotating 0s linear infinite;
+    -o-animation: rotating 0s linear infinite;
+    animation: rotating 0s linear infinite;
+  }
+
+  .rotating1 {
     -webkit-animation: rotating 1s linear infinite;
     -moz-animation: rotating 1s linear infinite;
     -ms-animation: rotating 1s linear infinite;
     -o-animation: rotating 1s linear infinite;
     animation: rotating 1s linear infinite;
+  }
 
-    /* -webkit-animation: rotating 0.1s linear infinite;
-    -moz-animation: rotating 0.1s linear infinite;
-    -ms-animation: rotating 0.1s linear infinite;
-    -o-animation: rotating 0.1s linear infinite;
-    animation: rotating 0.1s linear infinite; */
+  .rotating2 {
+    -webkit-animation: rotating 0.8s linear infinite;
+    -moz-animation: rotating 0.8s linear infinite;
+    -ms-animation: rotating 0.8s linear infinite;
+    -o-animation: rotating 0.8s linear infinite;
+    animation: rotating 0.8s linear infinite;
+  }
+
+  .rotating3 {
+    -webkit-animation: rotating 0.6s linear infinite;
+    -moz-animation: rotating 0.6s linear infinite;
+    -ms-animation: rotating 0.6s linear infinite;
+    -o-animation: rotating 0.6s linear infinite;
+    animation: rotating 0.6s linear infinite;
+  }
+
+  .rotating4 {
+    -webkit-animation: rotating 0.4s linear infinite;
+    -moz-animation: rotating 0.4s linear infinite;
+    -ms-animation: rotating 0.4s linear infinite;
+    -o-animation: rotating 0.4s linear infinite;
+    animation: rotating 0.4s linear infinite;
+  }
+
+  .rotating5 {
+    -webkit-animation: rotating 0.2s linear infinite;
+    -moz-animation: rotating 0.2s linear infinite;
+    -ms-animation: rotating 0.2s linear infinite;
+    -o-animation: rotating 0.2s linear infinite;
+    animation: rotating 0.2s linear infinite;
   }
 
   .propellercontainer{
