@@ -1,6 +1,7 @@
 import { onValue, ref, set } from "firebase/database";
 import { useEffect, useState } from "react"
 import { db } from "../firebase"
+import '../Styles/ControllerScreenStyle.css'
 
 
 const ControllerScreen = () => {
@@ -14,15 +15,15 @@ const ControllerScreen = () => {
   }, []);
 
   const pojacaj = () => {
-    jacina < 5 && set(ref(db, '/jacina'), jacina + 1);
+    jacina < 5 && jacina > 0 && set(ref(db, '/jacina'), jacina + 1);
   }
 
   const smanji = () => {
-    jacina > 0 && set(ref(db, '/jacina'), jacina - 1);
+    jacina > 1 && set(ref(db, '/jacina'), jacina - 1);
   }
 
   const on = () => {
-    jacina == 0 && set(ref(db, '/jacina'), 1);
+    jacina === 0 && set(ref(db, '/jacina'), 1);
   }
 
   const off = () => {
@@ -30,13 +31,22 @@ const ControllerScreen = () => {
   }
 
   return (
-    <>
-      <h1>{jacina}</h1>
-      <button onClick={on}>ON</button>
-      <button onClick={off}>OFF</button>
-      <button onClick={pojacaj}>POJACAJ</button>
-      <button onClick={smanji}>SMANJI</button>
-    </>
+    <div className="controllercontainer">
+      <div className="jacinacontainer">
+        <h1 className="jacina">{jacina}</h1>
+      </div>
+      <br /><br /><br /><br />
+      <div className="btnContainer">
+        <button onClick={on} className="btn">ON</button>
+        <button onClick={off} className="btn">OFF</button>
+      </div>
+      <br /><br /><br /><br /><br /><br /><br />
+      <div className="btnContainer">
+        <button onClick={pojacaj} className="btn2">POJACAJ</button>
+        <button onClick={smanji} className="btn2">SMANJI</button>
+      </div>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
   )
 }
 
