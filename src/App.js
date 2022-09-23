@@ -3,6 +3,8 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import HomeScreen from './Screens/HomeScreen';
 import ControllerScreen from './Screens/ControllerScreen';
 
+// import {db} from './firebase'
+
 function App() {
   return (
     <BrowserRouter>
