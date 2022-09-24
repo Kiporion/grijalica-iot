@@ -35,17 +35,16 @@ const ControllerScreen = () => {
       <div className="jacinacontainer">
         <h1 className="jacina">{jacina}</h1>
       </div>
-      <br /><br /><br /><br />
       <div className="btnContainer">
         <button onClick={on} className="btn">ON</button>
         <button onClick={off} className="btn">OFF</button>
       </div>
-      <br /><br /><br /><br /><br /><br /><br />
+      <br /><br />
       <div className="btnContainer">
         <button onClick={pojacaj} className="btn2">POJACAJ</button>
         <button onClick={smanji} className="btn2">SMANJI</button>
       </div>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
   )
 }

@@ -18,7 +18,7 @@ const HomeScreen = () => {
     <>
         <br /><br /><br /><br /><br /><br />
         <div className='propellercontainer'>
-          <img src={propeller} alt="" className={`rotating${jacina}`} />
+          <img src={propeller} alt="" className={`rotating${jacina}`} style={{width: '500px'}}/>
         </div>
     </>
   )
