@@ -1,82 +1,33 @@
-@-webkit-keyframes rotating /* Safari and Chrome */ {
-    from {
-      -webkit-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-    to {
-      -webkit-transform: rotate(360deg);
-      -o-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes rotating {
-    from {
-      -ms-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -webkit-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-    to {
-      -ms-transform: rotate(360deg);
-      -moz-transform: rotate(360deg);
-      -webkit-transform: rotate(360deg);
-      -o-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
-  }
-
-  .rotating0 {
-    -webkit-animation: rotating 0s linear infinite;
-    -moz-animation: rotating 0s linear infinite;
-    -ms-animation: rotating 0s linear infinite;
-    -o-animation: rotating 0s linear infinite;
-    animation: rotating 0s linear infinite;
-  }
-
-  .rotating1 {
-    -webkit-animation: rotating 1s linear infinite;
-    -moz-animation: rotating 1s linear infinite;
-    -ms-animation: rotating 1s linear infinite;
-    -o-animation: rotating 1s linear infinite;
-    animation: rotating 1s linear infinite;
-  }
-
-  .rotating2 {
-    -webkit-animation: rotating 0.8s linear infinite;
-    -moz-animation: rotating 0.8s linear infinite;
-    -ms-animation: rotating 0.8s linear infinite;
-    -o-animation: rotating 0.8s linear infinite;
-    animation: rotating 0.8s linear infinite;
-  }
-
-  .rotating3 {
-    -webkit-animation: rotating 0.6s linear infinite;
-    -moz-animation: rotating 0.6s linear infinite;
-    -ms-animation: rotating 0.6s linear infinite;
-    -o-animation: rotating 0.6s linear infinite;
-    animation: rotating 0.6s linear infinite;
-  }
-
-  .rotating4 {
-    -webkit-animation: rotating 0.4s linear infinite;
-    -moz-animation: rotating 0.4s linear infinite;
-    -ms-animation: rotating 0.4s linear infinite;
-    -o-animation: rotating 0.4s linear infinite;
-    animation: rotating 0.4s linear infinite;
-  }
-
-  .rotating5 {
-    -webkit-animation: rotating 0.2s linear infinite;
-    -moz-animation: rotating 0.2s linear infinite;
-    -ms-animation: rotating 0.2s linear infinite;
-    -o-animation: rotating 0.2s linear infinite;
-    animation: rotating 0.2s linear infinite;
-  }
-
-  .propellercontainer{
+body{
+  background-color: rgb(255 255 255);
+  padding:0;
+  height: 100vh;
+}
+  .heatercontainer{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    
+  }
+  
+  #heater{
+    position: absolute;
+    z-index: -1;
+  }
+
+  .bar{
+    background-color: gray;
+    width: 300px;
+    margin-bottom: 30px;
+    margin-left: -25px;
+    border-radius: 50px;
+    text-align: center;
+  }
+
+  .barOn{
+    background-color: gray;
+    transition: background-color 3s;
+    background-color: orange;
   }

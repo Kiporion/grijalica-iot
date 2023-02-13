@@ -41,10 +41,9 @@ const ControllerScreen = () => {
       </div>
       <br /><br />
       <div className="btnContainer">
-        <button onClick={pojacaj} className="btn2">POJACAJ</button>
-        <button onClick={smanji} className="btn2">SMANJI</button>
+        <button onClick={pojacaj} className="btn2" id="btnup">POJACAJ</button>
+        <button onClick={smanji} className="btn2" id="btndwn">SMANJI</button>
       </div>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
   )
 }
